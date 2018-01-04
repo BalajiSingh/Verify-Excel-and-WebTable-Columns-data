@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data Driven Basics">
+    
+    <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+       <listener class-name="com.listeners.CustomListeners"/>
+  </listeners>
+    
+    
+	<test name="Verify Excel and WebTable Column data test">
+		<classes>
+			<class name="com.tests.Verify_Excel_and_WebTable_Col_data_test" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	<test name="Add Customer Test">
+		<classes>
+			<class name="com.tests.Example2" />
+		</classes>
+	</test> <!-- Test -->
+	
+		
+	
+</suite> <!-- Suite -->
